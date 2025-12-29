@@ -1,0 +1,358 @@
+body {
+    background-color: #f9f3f3;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .contenitore {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem;
+    border-radius: 20px;
+    box-shadow: 0 9px 20px rgba(16, 36, 124, 0.15);
+  }
+  
+  .decorazione-header {
+    min-height: auto;
+    background-image: url("immagini/sfondoalto.jpeg");
+    background-size: contain;
+    background-position: center;
+    padding: 6rem 6rem;
+    text-align: center;
+  }
+
+  .decorazione-header-antipasti {
+    min-height: 100vh; 
+    background-image: url("immagini/sfondo-antipasti.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    padding: 6rem;
+    text-align: center;
+  }
+  
+    .decorazione-header-primi {
+      min-height: 100vh; 
+      background-image: url("immagini/italianpizza.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      padding: 6rem;
+      text-align: center;
+    }
+  
+    .decorazione-header-secondi {
+      min-height: 100vh; 
+       background-image: url("immagini/italianlandscape.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      padding: 6rem;
+      text-align: center;
+    }
+    .decorazione-header-dolci {
+      min-height: 100vh; 
+      background-image: url("immagini/immagineitalia.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed; 
+      padding: 6rem;
+      text-align: center;
+    }
+
+  .menu {
+    display: inline-block; 
+    background-color: #10247c;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .menu a {
+    color: white;
+    font-size: 1.6em;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  .titolo1 {
+    color:#10247c;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    margin-bottom: 0px;
+    font-size: 3em;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 0.9;
+    padding-bottom: 0.7em;
+  }
+
+  .titolo {
+    color:#f9f3f3;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 4000;
+    margin-bottom: 0px;
+    font-size: 5em;
+    box-sizing: border-box;
+    padding-bottom: 0.6em;
+    line-height: 0.7;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .sottotitolo {
+    font-family: sans-serif;
+    font-size: 2.3em;
+    color: #f9f3f3;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  .sottotitolo1 {
+    font-family: sans-serif;
+    font-size: 1.8em;
+    color: #10247c;
+    margin: 1rem;
+    margin-top: -30px;
+    margin-bottom: -20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .intro {
+    background-color: #10247c;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .intro h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .galleria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .ricetta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: #f9f3f3;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(16, 36, 124, 0.1);
+    padding: 2rem;
+    margin-bottom: 3rem;
+    transition: transform 0.3s ease;
+    }
+  
+  .ricetta:hover {
+    transform: translateY(-5px);
+  }
+  
+  .testo-ricetta {
+    flex: 1 1 300px;
+    color: #2a3a80;
+    line-height: 1.2;
+    text-align: left;
+    font-size: 1.5rem;
+    max-width: 80%;
+    margin: 0 auto 20px auto;
+    padding-left: 10px;
+  }
+  
+  .testo-ricetta h3 {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    font-weight: 700;
+  }
+  
+  .testo-ricetta p, .testo-ricetta ul {
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .immagini-ricetta {
+    flex: 1 1 100%; 
+    display: flex;
+    flex-direction: row; 
+    gap: 1rem;
+    overflow-x: auto; 
+    padding: 0.5rem 0;
+    margin-top: 1rem;
+    scrollbar-width: thin; 
+    justify-content: center;
+  }
+  
+  .immagini-ricetta img,
+  .immagini-ricetta video {
+    flex: 0 0 auto; 
+    width: 500px; 
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(16, 36, 124, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .ricetta {
+      flex-direction: column;
+      align-items: center;
+      text-align: left;
+    }
+
+    .immagini-ricetta {
+      flex-direction:row;
+      flex-wrap:wrap;
+      justify-content:center;
+      overflow:scroll;
+    }
+  
+    .immagini-ricetta img, 
+    .immagini-ricetta video {
+      max-width: 45%;
+    }
+  }
+  
+  .galleria img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  footer {
+    min-height: auto;
+    background-image: url("immagini/sfondobasso.jpeg");
+    background-size: contain;
+    background-position: center;
+    padding: 6rem 6rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .accessibile-btn {
+    background-color: #10247c;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accessibile-btn:hover {
+    background-color: #1a34a0;
+  }
+  
+  .bottone-indietro {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #10247c;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+  
+  .bottone-indietro:hover {
+    text-decoration:underline;
+  }
+  
+  
+  .slider-container {
+    position: relative;
+    width: 30vw;       
+    aspect-ratio: 5 / 4; 
+    margin: 0 auto;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .slide.active {
+    transform: scale(1.15);
+    z-index: 1;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    display: block;
+    border-radius: 20px;
+  }
+  
+  
+  .slider-buttons {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    transform: translateY(-50%);
+    pointer-events: none; 
+    z-index: 10;
+  }
+  
+  .slider-buttons button {
+    pointer-events: all;
+    background-color: rgba(16, 36, 124, 0.7);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slider-buttons button:hover {
+    background-color: rgba(26, 52, 160, 0.9);
+  }

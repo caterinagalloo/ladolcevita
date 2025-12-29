@@ -1,0 +1,333 @@
+body {
+  background-color: #f9f3f3;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.contenitore {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(16, 36, 124, 0.15);
+}
+
+.decorazione-header {
+  min-height: auto;
+  background-image: url("immagini/sfondoalto.jpeg");
+  background-size: contain;
+  background-position: center;
+  padding: 6rem 0rem;
+  text-align: center;
+}
+
+  .decorazione-header-antipasti {
+    min-height: 100vh; 
+    background-image: url("immagini/sfondo-antipasti.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    padding: 6rem;
+    text-align: center;
+  }
+
+  .decorazione-header-primi {
+    min-height: 100vh; 
+    background-image: url("immagini/italianpizza.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    padding: 6rem;
+    text-align: center;
+  }
+
+  .decorazione-header-secondi {
+    min-height: 100vh; 
+    background-image: url("immagini/italianlandscape.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    padding: 6rem;
+    text-align: center;
+  }
+
+  .decorazione-header-dolci {
+    min-height: 100vh; 
+    background-image: url("immagini/immagineitalia.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    padding: 6rem;
+    text-align: center;
+  }
+
+.menu {
+  display: inline-block; 
+  background-color: #10247c;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.titolo1 {
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  font-size: 3em;
+  color: #10247c;
+  margin: 10px 0;
+}
+
+.titolo {
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  font-size: 3em;
+  color: #10247c;
+  margin: 10px 0
+}
+
+.sottotitolo {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #10247c;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.sottotitolo1 {
+  font-family: sans-serif;
+  font-size: 1em;
+  color: #10247c;
+  margin-top: -15px;
+  margin-bottom: -20px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.galleria {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ricetta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #f9f3f3;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(16, 36, 124, 0.1);
+  padding: 2rem;
+  margin-bottom: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.ricetta:hover {
+  transform: translateY(-5px);
+}
+
+section h3 + p {
+  margin-top: 3pt;
+}
+
+section h3 + ul {
+  margin-top: 3pt;
+}
+
+.testo-ricetta {
+  flex: 1 1 300px;
+  color: #2a3a80;
+  line-height: 1.2;
+  text-align: left;
+  font-size: 1.1rem;
+  margin-left: 5pt;
+  margin-right: 5pt;
+}
+
+.testo-ricetta h3 {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 1.2em;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  font-weight: 700;
+}
+
+.testo-ricetta p, .testo-ricetta ul {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.immagini-ricetta {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.immagini-ricetta img,
+.immagini-ricetta video {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .ricetta {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .immagini-ricetta {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .immagini-ricetta img,
+  .immagini-ricetta video {
+    max-width: 45%;
+  }
+}
+
+.galleria img {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+}
+
+footer {
+  min-height: auto;
+  background-image: url("immagini/sfondobasso.jpeg");
+  background-size: contain;
+  background-position: center;
+  padding: 6rem 6rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accessibile-btn {
+  background-color: #10247c;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accessibile-btn:hover {
+  background-color: #1a34a0;
+}
+
+.bottone-indietro {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #10247c;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.bottone-indietro:hover {
+  text-decoration:underline;
+}
+
+.slider-container {
+  position: relative;
+  width: 30vw;       
+  aspect-ratio: 5 / 4; 
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slide.active {
+  transform: scale(1.15);
+  z-index: 1;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  display: block;
+  border-radius: 20px;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.slider-buttons button {
+  pointer-events: all; 
+  background-color: rgba(16, 36, 124, 0.7);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.slider-buttons button:hover {
+  background-color: rgba(26, 52, 160, 0.9);
+}

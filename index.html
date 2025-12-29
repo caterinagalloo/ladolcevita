@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Dolce Vita - Ricette Italiane</title>
+  <link id="stylesheet" rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="decorazione-header">
+    <nav class="menu">
+      <a href="antipasti.html">Antipasti</a>
+      <a href="primi.html">Primi Piatti</a>
+      <a href="secondi.html">Secondi Piatti</a>
+      <a href="dolci.html">Dolci</a>
+    </nav>
+    <h1 class="titolo1">La Dolce Vita</h1>
+    <h2 class="sottotitolo1">Ricette italiane</h2>
+  </div>
+
+  <main>
+      <h3 class="testo-ricetta" style="margin-left: 80px;">Lasciati ispirare....</h3>
+      <div class="slider-container">
+        <div class="slider" id="slider">
+          <div class="slide"><a href="antipasti.html#Arancine"><img src="immagini/arancini 2.jpg"></a></div>
+          <div class="slide"><a href="antipasti.html#Bruschetta"><img src="immagini/bruschetta 3.jpg"></a></div>
+          <div class="slide"><a href="secondi.html#Fiorentina"><img src="immagini/fiorentina.jpg"></a></div>
+          <div class="slide"><a href="primi.html#Pasta"><img src="immagini/pasta ricetta.jpg"></a></div>
+          <div class="slide"><a href="secondi.html#Fritto"><img src="immagini/fritto misto 2.jpg"></a></div>
+          <div class="slide"><a href="primi.html#Pizza"><img src="immagini/Pizza Napolitana.jpeg" ></a></div>
+          <div class="slide"><a href="secondi.html#Polpette"><img src="immagini/polpette ricetta 3.jpg"></a></div>
+          <div class="slide"><a href="dolci.html#Sorbetto"><img src="immagini/sorbetto ricetta 2.jpg" ></a></div>
+          <div class="slide"><a href="dolci.html#Tiramisu"><img src="immagini/tiramisu ricetta 3.jpg"></a></div>
+        </div>
+        <div class="slider-buttons">
+          <button onclick="prevSlide()">←</button>
+          <button onclick="nextSlide()">→</button>
+        </div>
+      </div>
+  </main>
+<br> <br>
+<div>  <div style="text-align: center;">
+    <img src="immagini/cartina italia.png" style="width: 60%; max-width: 500px; margin-bottom: 40px";>
+    <p class="sottotitolo1">Ricette da tutta Italia</p>
+    </div>
+  <div class="testo-ricetta"><div style="text-align: center;">
+    <p> 
+    Questo sito mira a raccontare l'Italia attraverso la sua cultura culinaria che si è formata nei secoli, <br> diventando sempre più affine a quella che conosciamo oggi.
+    <br>
+    Le nostre ricette comprendono la loro storia, la lista degli ingredienti e la preparazione!
+    <br>
+    Per i più curiosi ecco a voi la 
+    <a href="https://www.maletti1867.it/blog/712/la-storia-della-gastronomia-italiana-dalle-origini-fino-a-oggi" target="_blank" style="color: #10247c;"><b><i>storia approfondita della cucina italiana</i></b></a>
+  </p>
+  </div>
+  <br>
+  <h1 class="titolo1">Buon appetito!</h1>
+</div>
+
+  <footer>
+    <button class="accessibile-btn" onclick="cambiaStile()">Versione accessibile</button>
+    <script src="script.js"></script>
+  </footer>
+</body>
+</html>
